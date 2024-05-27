@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.row.form-inline {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.row.form-inline .form-control {
+  flex: 1; 
+  min-width: 0; 
+}
+
+.card-container{
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(204,245,211);
+}
+
+.card-container button{
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .card-container button{
+    width: 50%;
+  }
+
+  .form-control{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:1250px) {
+  #dropdown-basic{
+    font-size: 13px;
+  }
 }
